@@ -1,0 +1,53 @@
+/* 1. Убираем все отступы и настраиваем box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Убираем стандартные маркеры у списков (по желанию) */
+ul, ol {
+  list-style: none;
+}
+
+/* 3. Делаем шрифты более плавными и настраиваем высоту строки */
+html {
+  -webkit-text-size-adjust: none; /* запрет автозума текста на мобильных */
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* сглаживание на Mac */
+  font-family: sans-serif; /* базовый шрифт */
+}
+
+/* 4. Картинки теперь ведут себя как блоки, а не как текст */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. Наследуем шрифты для полей ввода (они не наследуют их по умолчанию) */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Предотвращаем горизонтальную прокрутку */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 8. Делаем текстовые области удобнее */
+textarea {
+  resize: vertical;
+}
