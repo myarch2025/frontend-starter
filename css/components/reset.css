@@ -1,12 +1,15 @@
 /* 1. Убираем все отступы и настраиваем box-sizing */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 /* 2. Убираем стандартные маркеры у списков (по желанию) */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -25,14 +28,21 @@ body {
 }
 
 /* 4. Картинки теперь ведут себя как блоки, а не как текст */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* 5. Наследуем шрифты для полей ввода (они не наследуют их по умолчанию) */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -43,7 +53,8 @@ a {
 }
 
 /* 7. Предотвращаем горизонтальную прокрутку */
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
